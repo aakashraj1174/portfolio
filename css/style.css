@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    padding-top: 70px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+main{
+    padding-left: 400px;
+    padding-right: 400px;
+}
+main section{
+    margin-top: 10px;
+}
+header{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+body {
+  padding-top: 70px; 
+}
+
+header .container-fluid,
+main {
+    padding-left: 400px;
+    padding-right: 400px;
+}
+main #contact{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.intro {
+    color: #333; 
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+   header .container-fluid, main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    main #contact{
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+    .intro{
+        font-size: 14px;
+    
+}
+}
+@media (max-width: 768px) {
+    header .container-fluid,main {
+        padding-left: 15px; 
+        padding-right: 15px;
+    }
+    main #contact{
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+    .intro{
+        font-size: 14px;
+}
+}
+.navbar {
+    z-index: 1020;
+    background-color: whitesmoke;
+}
+.nav-item a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:400;
+}
+main{
+    height: 80%;
+    width: 100%;
+}
+.footer {
+    width: 100%;
+    color: black;
+    position: relative;
+    bottom: 0;
+    padding: 10px 0;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+
+}
+
+
+
+
+.up-arrow {
+    position: fixed;
+    bottom: 20px;   
+    right: 20px;   
+    background-color: #333;
+    color: white;   
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;  
+    z-index: 1000; 
+}
+.up-arrow:hover {
+    background-color: #555;
+}
+#home img{
+    height: 100%;
+    width: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.description {
+    font-size: 17px; 
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.image img {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    border-radius: 10%;
+}
+.socials {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.btn-primary {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.btn-primary:hover {
+    background-color: #333 !important; /* Slightly lighter shade for hover effect */
+    border-color: #333 !important;
+    transform: scale(1.05); 
+    transition: 0.3s ease-in-out;
+}
+.socials a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+.socials svg {
+    width: 32px; 
+    height: 32px; 
+    margin-right: 8px; 
+    transition: transform 0.2s ease, fill 0.2s ease;
+    fill: currentColor; 
+}
+
+.socials a:hover svg {
+    transform: scale(1.1);
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 350;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.nav-item{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+    background: #222; 
+    transform: scale(1.05); 
+    transition: 0.3s ease-in-out;
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.icon {
+    display: inline-block;
+    font-size: 18px;
+}
+
+#contact {
+    padding: 50px 0;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.mail-linkedin{
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.email-svg, .linkedin-svg {
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-mail {
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-mail:hover {
+    transform: translateY(-3px);
+}
+
+.icon {
+    margin-left: 5px;
+}
+
+.email-title, .linkedin-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.email-add {
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .title {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    width: 100%;
+    text-decoration: none;
+    color: #222;
+}
+
+#about h2.title {
+    margin-top: 40px;
+    font-size: 1.75rem;
+}
+
+#about h3.title {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+
+.introduction .description {
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+
+.experience-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.experience-card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.experience-header {
+    display: flex;
+    align-items: flex-start; /* Ensures SVG and title are in the same row */
+    gap: 5px; /* Reduce the gap between the icon and title */
+}
+
+.svg-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.experience-title {
+    flex-grow: 1;
+    flex-grow: 1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-title .description {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.cert-logo {
+    margin-left: 15px;
+    max-width: 80px;
+}
+
+.cert-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #about {
+        padding: 60px 15px;
+    }
+    
+    #about .title {
+        font-size: 1.75rem;
+    }
+    
+    #about h2.title {
+        font-size: 1.5rem;
+    }
+    
+    #about h3.title {
+        font-size: 1.25rem;
+    }
+    
+    .experience-card {
+        padding: 20px;
+    }
+    
+    .svg-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+}
+#skills {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    height: 100%; /* Makes cards in the same row equal height */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Space between rows on mobile */
+}
+
+.skill-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    margin-bottom: 20px;
+}
+
+.skill-card ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.skill-card li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Remove margin from last list item */
+.skill-card li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #skills {
+        padding: 60px 0;
+    }
+}
+#skills h2 {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    position: relative;
+}
+
+
+  #darkModeToggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    z-index: 1100; /* Ensure it's above other elements */
+  }
+  #darkModeToggle svg,
+#darkModeToggleLg svg {
+    width: 20px;
+    height: 20px;
+}
+[data-bs-theme="dark"] #darkModeToggle,
+[data-bs-theme="dark"] #darkModeToggleLg {
+    background-color: #343a40;
+    color: #f8f9fa; 
+}
+  /* Light mode styles */
+  /* Dark mode for all cards */
+[data-bs-theme="dark"] .card, 
+[data-bs-theme="dark"] .skill-card, 
+[data-bs-theme="dark"] .experience-card {
+    background-color: #333; /* Dark background */
+    color: white; /* Light text */
+    border: 1px solid #444; /* Slight border for visibility */
+}
+[data-bs-theme="dark"] .email-add,
+[data-bs-theme="dark"] .email-title,
+[data-bs-theme="dark"] .linkedin-title {
+    color: white !important;
+}
+/* Default SVG color */
+.social-icon svg path {
+    fill: currentColor;
+}
+
+/* Light Mode (Default) */
+body {
+    --icon-color: black;  /* Default SVG color */
+}
+
+/* Dark Mode */
+[data-bs-theme="dark"] body {
+    --icon-color: white;  /* Change SVG color in dark mode */
+}
+
+/* Apply color */
+.social-icon {
+    color: var(--icon-color);
+}
+
+[data-bs-theme="dark"] #about .title,
+[data-bs-theme="dark"] #about h2,
+[data-bs-theme="dark"] #about h3,
+[data-bs-theme="dark"] #about h4 {
+    color: white !important;
+}
+[data-bs-theme="dark"] svg {
+    fill: white !important;
+    color: white !important;
+}
+
+/* Ensure paragraph text is visible in dark mode */
+[data-bs-theme="dark"] #about .description {
+    color: #ddd;
+}
+/* Dark mode for other elements */
+[data-bs-theme="dark"] body {
+    background-color: #121212; /* Dark background */
+    color: white;
+}
+
+/* Dark mode for navbar */
+[data-bs-theme="dark"] .navbar {
+    background-color: #222;
+}
+
+/* Dark mode for footer */
+[data-bs-theme="dark"] .footer {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+/* Dark mode for buttons */
+[data-bs-theme="dark"] .btn-primary {
+    background-color: white !important;
+    color: black !important;
+}
+
+[data-bs-theme="dark"] .btn-primary:hover {
+    background-color: #ddd !important;
+    color: black !important;
+}
+
+/* Dark mode for text */
+[data-bs-theme="dark"] .description, 
+[data-bs-theme="dark"] .intro, 
+[data-bs-theme="dark"] .title {
+    color: white;
+}
+
+[data-bs-theme="dark"] .btn-mail {
+    background-color: white !important;
+    color: black !important;
+}
+[data-bs-theme="dark"] .footer .text-black {
+    color: white !important;
+}
+
+@media (max-width: 991px) {
+    /* For tablet and smaller screens */
+    #darkModeToggle {
+        position: relative;
+        transform: translateX(150%);
+        margin: 0;
+        top: 50%; /* Center vertically */
+
+    }
+}
